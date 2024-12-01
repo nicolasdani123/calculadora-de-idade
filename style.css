@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(241, 240, 240, 0.918);
+}
+
+.main-container {
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    border-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.container-btn button {
+    background-color: black;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.4rem;
+    transition: 0.3s ease;
+}
+
+/* Apliquei o estilo de mudança de cor no botão quando ele tiver o atributo data-status-btn="active" */
+[data-status-btn="active"] {
+    background-color: blueviolet;
+}
+
+/* Apliquei o estilo correto no input dentro do botão container */
+.container-btn button .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adicionando alinhamento se necessário */
+}
+
+.input-container input {
+    width: 50%;
+    padding: 0.5rem 0;
+    outline: none;
+    border: 1px solid hsla(259, 100%, 65%, 0.219);
+}
+
+.data-user {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid hsla(259, 100%, 65%, 0.219);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1.5rem;
+}
+
+.container-inform {
+    padding: 0 0 0 2.5rem;
+    font-size: 3.5rem;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inform-number {
+    display: inline;
+    color: hsl(259, 100%, 65%);
+}
